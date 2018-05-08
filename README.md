@@ -4,6 +4,7 @@ Graphics compiler assignment.
 name | input | output
 --- | --- | ---
 [Lexer](#lexers) | source code | token list
+[Parser (syntax)](#parser) | token list | syntax tree
 
 1. Lexer (input is source code): performs lexical analysis
 - Knows valid keywords, literal formats, and identifier formats.
@@ -31,3 +32,5 @@ We use lex or flex (free lex) to define our tokens. In C, it looks like:
   strcpy(yyval.string, yytext); return STRING;
 }
 ```
+
+# Parser
