@@ -5,6 +5,7 @@ name | input | output
 --- | --- | ---
 [Lexer](#lexers) | source code | token list
 [Parser (syntax)](#parser) | token list | syntax tree
+[Semantic Analyzer](#semantic-analyzer) | syntax tree | operation list, symbol table
 
 1. Lexer (input is source code): performs lexical analysis
 - Knows valid keywords, literal formats, and identifier formats.
@@ -34,3 +35,11 @@ We use lex or flex (free lex) to define our tokens. In C, it looks like:
 ```
 
 # Parser
+
+- Performs syntax analysis
+- Checks if token list for valid structure
+- Knows the grammar of the language
+
+# Semantic Analyzer
+
+As a program runs, values change. That is the point of the symbol table.
